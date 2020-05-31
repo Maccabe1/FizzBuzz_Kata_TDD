@@ -8,12 +8,10 @@ public class FizzBuzz {
         if(number == 0) {
             return "0";
         }
-
         if(number % 3 == 0) {
             fb += "Fizz";
         }
-
-        if (number % 5 == 0) {
+        if(number % 5 == 0) {
             fb += "Buzz";
         }
         return fb.isEmpty() ? String.valueOf(number) : fb;
