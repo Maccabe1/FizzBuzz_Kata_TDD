@@ -3,21 +3,19 @@ package main.java;
 public class FizzBuzz {
 
     public static String check(int number) {
+        String fb = "";
+
         if(number == 0) {
             return "0";
-
         }
-        if(number % 3 == 0 && number % 5 == 0) {
-            return "FizzBuzz";
 
-        }
         if(number % 3 == 0) {
-            return "Fizz";
-
-        } else if (number % 5 == 0){
-            return "Buzz";
-
+            fb += "Fizz";
         }
-        return String.valueOf(number);
+
+        if (number % 5 == 0) {
+            fb += "Buzz";
+        }
+        return fb.isEmpty() ? String.valueOf(number) : fb;
     }
 }
