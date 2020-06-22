@@ -10,36 +10,36 @@ public class FizzBuzzTest {
 
     @Test
     public void zeroEqualsZero() {
-        assertThat(FizzBuzz.check(0), is("0"));
+        assertThat(FizzBuzz.returnOutput(0), is("0"));
     }
 
     @Test
     public void oneEqualsZero() {
-        assertThat(FizzBuzz.check(1), is("1"));
+        assertThat(FizzBuzz.returnOutput(1), is("1"));
     }
 
     @Test
     public void threeEqualsFizz() {
-        assertThat(FizzBuzz.check(3), is("Fizz"));
+        assertThat(FizzBuzz.returnOutput(3), is("Fizz"));
     }
 
     @Test
     public void fiveEqualsBuzz() {
-        assertThat(FizzBuzz.check(5), is("Buzz"));
+        assertThat(FizzBuzz.returnOutput(5), is("Buzz"));
     }
 
     @Test
     public void sixEqualsFizz() {
-        assertThat(FizzBuzz.check(6), is("Fizz"));
+        assertThat(FizzBuzz.returnOutput(6), is("Fizz"));
     }
 
     @Test
     public void tenEqualsBuzz() {
-        assertThat(FizzBuzz.check(10), is("Buzz"));
+        assertThat(FizzBuzz.returnOutput(10), is("Buzz"));
     }
 
     @Test
     public void fifteenEqualsFizzBuzz() {
-        assertThat(FizzBuzz.check(15), is("FizzBuzz"));
+        assertThat(FizzBuzz.returnOutput(15), is("FizzBuzz"));
     }
 }
