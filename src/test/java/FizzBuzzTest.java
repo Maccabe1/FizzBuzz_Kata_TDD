@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThat;
 public class FizzBuzzTest {
 
     @Test
-    public static void zeroEqualsZero() {
-        assertThat(FizzBuzz.returnOutput(0), is(0));
+    public void zeroEqualsZero() {
+        assertThat(FizzBuzz.returnOutput(0), is("0"));
     }
 }
