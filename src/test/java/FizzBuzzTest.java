@@ -11,4 +11,9 @@ public class FizzBuzzTest {
     public void zeroEqualsZero() {
         assertThat(FizzBuzz.returnOutput(0), is("0"));
     }
+
+    @Test
+    public void threeEqualsFizz() {
+        assertThat(FizzBuzz.returnOutput(3), is("Fizz"));
+    }
 }
