@@ -21,4 +21,19 @@ public class FizzBuzzTest {
     public void fiveEqualsBuzz() {
         assertThat(FizzBuzz.returnOutput(5), is("Buzz"));
     }
+
+    @Test
+    public void sixEqualsFizz() {
+        assertThat(FizzBuzz.returnOutput(6), is("Fizz"));
+    }
+
+    @Test
+    public void tenEqualsBuzz() {
+        assertThat(FizzBuzz.returnOutput(10), is("Buzz"));
+    }
+
+    @Test
+    public void fifteenEqualsFizzBuzz() {
+        assertThat(FizzBuzz.returnOutput(15), is("FizzBuzz"));
+    }
 }
