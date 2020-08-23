@@ -36,4 +36,9 @@ public class FizzBuzzTest {
     public void fifteenEqualsFizzBuzz() {
         assertThat(FizzBuzz.returnOutput(15), is("FizzBuzz"));
     }
+
+    @Test
+    public void twentyOneEqualsFizzBuzz() {
+        assertThat(FizzBuzz.returnOutput(30), is("FizzBuzz"));
+    }
 }
